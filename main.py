@@ -18,5 +18,12 @@ app.config['SECRET_KEY'] = SECRET_KEY
 def home():
     return render_template('index.html')
 
+
+@app.route('/download', methods=['GET', 'POST'])
+def download_file():
+    path = "resume.pdf"
+    return send_file(path, as_attachment=True)
+
+
 if __name__ =="__main__":
     app.run(debug=True)
