@@ -17,3 +17,5 @@ flask_uploads
 Flask-Reuploaded
 python-dotenv
 flask-Migrate
+gunicorn==20.1.0
+psycopg2-binary==2.9.3
