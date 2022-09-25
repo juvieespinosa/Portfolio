@@ -21,7 +21,7 @@ def home():
 
 @app.route('/download', methods=['GET', 'POST'])
 def download_file():
-    path = "juvie-rosarie-espinosa.pdf"
+    path = 'juvie-rosarie-espinosa.pdf'
     return send_file(path, as_attachment=True)
 
 
