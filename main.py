@@ -16,7 +16,7 @@ app.config["SECRET_KEY"] = SECRET_KEY
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
 @app.route('/download', methods=['GET', 'POST'])
