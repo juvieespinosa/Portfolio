@@ -19,7 +19,7 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/download", methods=['GET', 'POST'])
+@app.route("/download", methods=["GET", 'POST'])
 def download_file():
     path = "juvie-rosarie-espinosa.pdf"
     return send_file(path, as_attachment=True)
